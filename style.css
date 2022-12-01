@@ -108,5 +108,68 @@ body {
   padding: 2.8rem 16.5rem 13.2rem 16.5rem;
 }
 
-.heading--primary {
+/* !HEADER */
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(228, 233, 242, 1);
 }
+.header--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+  padding-left: 5.6rems;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.nav-list__item a:link,
+.nav-list__item a:visited {
+  text-decoration: none;
+  color: var(--color-light-grey);
+  position: relative;
+}
+.nav-list__item a:link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: ease-in-out 0.2s;
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+}
+.nav-list__item a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.cart {
+  color: var(--color-light-grey);
+  cursor: pointer;
+}
+
+.profile-img {
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-img:hover {
+  border: 2px solid var(--color-primary);
+}
+
+/* SECTION MAIN */
