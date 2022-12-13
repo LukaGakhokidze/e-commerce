@@ -281,10 +281,6 @@ body {
   cursor: pointer;
 }
 
-.cart-content__btn:hover {
-  background-color: #ffab6a;
-}
-
 .profile-img {
   height: 5rem;
   border-radius: 50%;
